@@ -1,0 +1,72 @@
+{
+  "_from": "cordova-plugin-app-event@*",
+  "_id": "cordova-plugin-app-event@1.2.2",
+  "_inBundle": false,
+  "_integrity": "sha512-Fkn8xNt09tcg8QCp2LHBaAHB81gZbyZdSdd+bzhVitpjTfc38nqSm2hanWfFlqxPAckaSRDbD8MI1Ev5NWxquQ==",
+  "_location": "/cordova-plugin-app-event",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "cordova-plugin-app-event@*",
+    "name": "cordova-plugin-app-event",
+    "escapedName": "cordova-plugin-app-event",
+    "rawSpec": "*",
+    "saveSpec": null,
+    "fetchSpec": "*"
+  },
+  "_requiredBy": [
+    "/cordova-plugin-badge",
+    "/cordova-plugin-notification",
+    "/de.appplant.cordova.plugin.local-notification"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-app-event/-/cordova-plugin-app-event-1.2.2.tgz",
+  "_shasum": "bd1ba932b2e5cefaf918b681391f6d1fb995ca71",
+  "_spec": "cordova-plugin-app-event@*",
+  "_where": "F:\\dev\\asfm-youtube\\cordova-app\\YouTube - Parental Controlled - ASFM\\node_modules\\cordova-plugin-notification",
+  "author": {
+    "name": "Sebastián Katzer"
+  },
+  "bugs": {
+    "url": "https://github.com/katzer/cordova-plugin-app-event/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-app-event",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "Broadcasts UIApplicationDelegate events",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.6.0"
+    }
+  ],
+  "homepage": "https://github.com/katzer/cordova-plugin-app-event#readme",
+  "keywords": [
+    "appplant",
+    "UIApplicationDelegate",
+    "didRegisterUserNotificationSettings",
+    "didReceiveLocalNotification",
+    "didFinishLaunchingWithOptions",
+    "cordova",
+    "ecosystem:cordova"
+  ],
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "name": "cordova-plugin-app-event",
+  "platforms": [
+    "ios"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katzer/cordova-plugin-app-event.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.2.2"
+}

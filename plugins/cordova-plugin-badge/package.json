@@ -1,0 +1,73 @@
+{
+  "_from": "cordova-plugin-badge@0.7.4",
+  "_id": "cordova-plugin-badge@0.7.4",
+  "_inBundle": false,
+  "_integrity": "sha1-Ax0rZjg+RG1P+lDp/UmyKMOl4Vg=",
+  "_location": "/cordova-plugin-badge",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "cordova-plugin-badge@0.7.4",
+    "name": "cordova-plugin-badge",
+    "escapedName": "cordova-plugin-badge",
+    "rawSpec": "0.7.4",
+    "saveSpec": null,
+    "fetchSpec": "0.7.4"
+  },
+  "_requiredBy": [
+    "/cordova-plugin-notification"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-badge/-/cordova-plugin-badge-0.7.4.tgz",
+  "_shasum": "031d2b66383e446d4ffa50e9fd49b228c3a5e158",
+  "_spec": "cordova-plugin-badge@0.7.4",
+  "_where": "F:\\dev\\asfm-youtube\\cordova-app\\YouTube - Parental Controlled - ASFM\\node_modules\\cordova-plugin-notification",
+  "author": {
+    "name": "Sebastián Katzer"
+  },
+  "bugs": {
+    "url": "https://github.com/katzer/cordova-plugin-badge/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "cordova-plugin-app-event": ">=1.2.0"
+  },
+  "deprecated": false,
+  "description": "Shows the count of unread messages as a badge on the app icon",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    },
+    {
+      "name": "cordova-android",
+      "version": ">=4"
+    },
+    {
+      "name": "cordova-plugin",
+      "version": ">=4.2.0"
+    }
+  ],
+  "homepage": "https://github.com/katzer/cordova-plugin-badge#readme",
+  "keywords": [
+    "appplant",
+    "badge",
+    "shortcutbadger",
+    "cordova",
+    "ecosystem:cordova"
+  ],
+  "license": "Apache-2.0",
+  "name": "cordova-plugin-badge",
+  "platforms": [
+    "ios",
+    "wp8",
+    "android",
+    "browser",
+    "windows"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katzer/cordova-plugin-badge.git"
+  },
+  "version": "0.7.4"
+}

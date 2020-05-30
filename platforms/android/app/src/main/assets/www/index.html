@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/index.css" rel="stylesheet" />
+    <script src="cordova.js"></script>
+
+    <script src="js/misc.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/handlers.js"></script>
+    <script src="js/ui.js"></script>
+
+    <script src="js/index.js"></script>
+    
+    <title>YouTube - Parental Controlled - ASFM</title>
+</head>
+
+<body>
+
+    <!---div id="header">
+        <button id="back_btn" onclick="back()">
+
+        </button>
+    </div--->
+    <div id="load">
+        <img id="limg" src="img/load.gif">
+    </div>
+
+    <div id="set_pass_popup" class="popup">
+        <h2 id="set_pass_label">Set a Password, which will be used in adding channels</h2>
+        <input id="pass1" type="password" placeholder="Password">
+        <input id="pass2" type="password" placeholder="Confirm password">
+        <button onclick="setPass()">SET</button>
+    </div>
+
+    <div id="ent_pass_popup" class="popup">
+        <h2 id="set_pass_label">Enter Password to add channels</h2>
+        <input id="pass" type="password" placeholder="Password">
+        <button onclick="entPass()">ENTER</button>
+        <br><br><br>
+        <button onclick="chgPass()">Change Password</button>
+        <button onclick="chgKey()">Change API key</button>
+    </div>
+
+
+    <div id="activity_cnt">
+
+        <div id="add_chl_screen" class="activity">
+            <div id="chl_search_box">
+                <input type="text" onkeyup="chlSearch(event, this)" placeholder="Search for Channel" id="chl_search">
+                <!--button id="chl_search_btn">GO</button-->
+            </div>
+            <div id="chl_results">
+
+            </div>
+            <div id="chl_add_box">
+                <div id="chl_cart">
+
+                </div>
+                <!--button id="add_chl_btn">Add</button-->
+            </div>
+        </div>
+
+        <div id="chl_screen" class="activity">
+
+
+        </div>
+
+        <div id="vid_results_scr" class="activity">
+            <div id="vid_search_box">
+                <input type="text" onkeyup="searchVideo(this,event)" placeholder="Search for video" id="vid_search">
+                <!--button id="vid_search_btn">GO</button-->
+            </div>
+            <div id="vid_results">
+
+            </div>
+        </div>
+
+        <div id="vid_screen" class="activity">
+            <iframe id="v_iframe" allowtransparency=true allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen" id="vid_iframe"> </iframe>
+            <div id="v_desc"></div>
+        </div>
+
+    </div>
+
+</body>
+</html>

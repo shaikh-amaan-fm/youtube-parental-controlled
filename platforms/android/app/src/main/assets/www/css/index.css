@@ -1,0 +1,340 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+    *:focus {
+        outline:none;
+    }
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    touch-action:none;
+    overflow: hidden;
+}
+
+body {
+    padding: 0;
+    font-family: arial;
+}
+
+img {
+    background: url("../img/load.gif") cover no-repeat;
+}
+
+#load {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    opacity: 0;
+    color: white;
+    transition: opacity 0.5s;
+    z-index: 10;
+    display: none;
+    text-align: center;
+}
+
+    #load #limg {
+        height: 10%;
+        width: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+#activity_cnt {
+    width: 400%;
+    height: 100%;
+    white-space: nowrap;
+    transform: translateX(0);
+    transition: transform .5s;
+    background: rgb(40,40,40);
+}
+
+.activity {
+    height: 100%;
+    width: 25%;
+    margin: 0;
+    float: left;
+}
+
+.popup {
+    height: 70%;
+    width: 90%;
+    margin: 15% 5%;
+    position: absolute;
+    transform: translateY(-300%);
+    background: white;
+    box-shadow: 2px 4px 10px black;
+    transition: transform .5s ease-in;
+    z-index: 3;
+    text-align: center;
+}
+
+    .popup h2 {
+        margin: 5%;
+    }
+
+    .popup input {
+        height: 10%;
+        width: 80%;
+        margin: 2% 10%;
+        border-radius: 2px;
+        border: none;
+        border-bottom: solid 1px;
+        font-size: large;
+    }
+
+    .popup button {
+        height: 10%;
+        width: 80%;
+        margin: 2% 10%;
+        border-radius: 2px;
+        background: rgb(45,85,255);
+        font-size: large;
+        border: none;
+        color: white;
+        border-radius: 2px;
+    }
+
+/*
+#add_chl_screen {
+    background: cyan;
+}
+
+#chl_screen {
+    background: red;
+}
+
+#vid_screen {
+    background: blue;
+}
+
+#vid_results_scr {
+    background: yellow;
+}
+*/
+#chl_add_box {
+    height: 10%;
+    width: 100%;
+    border: solid 1px;
+    display: inline-block;
+}
+
+#chl_cart {
+    height: 100%;
+    width: 100%;
+    border: none;
+    float: left;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+    #chl_cart .add_chl_cart_card {
+        height: 50%;
+        width: 40%;
+        display: inline-block;
+        position: relative;
+        background: rgb(170,15,155);
+        color: white;
+        border-radius: 5px;
+        position: relative;
+        top: 25%;
+        margin: 0% 3%;
+    }
+
+        #chl_cart .add_chl_cart_card span {
+            width: 80%;
+            overflow: hidden;
+            box-sizing: border-box;
+            text-overflow: ellipsis;
+            position: absolute;
+            top: 50%;
+            left: 0%;
+            padding-left: 5px;
+            transform: translate(0%,-50%);
+        }
+
+        #chl_cart .add_chl_cart_card button {
+            height: 100%;
+            width: 20%;
+            overflow: hidden;
+            box-sizing: border-box;
+            text-overflow: ellipsis;
+            position: absolute;
+            top: 50%;
+            right: 0%;
+            color: pink;
+            border: none;
+            background: transparent;
+            transform: translate(0%,-50%);
+        }
+
+
+#add_chl_btn {
+    height: 100%;
+    width: 20%;
+    padding: 0;
+    border: none;
+    float: left;
+}
+
+
+.hint {
+    height: 5%;
+    width: 100%;
+    border: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.chl_card, .add_chl_btn {
+    height: 15%;
+    width: 95%;
+    margin: 2% 2.5%;
+    background: rgb(50,50,50);
+    color: white;
+    position: relative;
+    transform: scale(0,0);
+    transform-origin: top;
+    transition: all .5s ease-out;
+    box-shadow: 2px 4px 10px rgb(10,10,10);
+}
+
+    .chl_card img {
+        width: 15%;
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        transform: translate(0,-50%);
+        border-radius: 100px;
+    }
+
+    .chl_card span {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        font-size: large;
+        transform: translate(0,-50%);
+    }
+
+.add_chl_btn {
+    background: rgb(40,40,40);
+    text-align: center;
+    overflow: hidden;
+}
+
+    .add_chl_btn span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 150%;
+        transform: translate(-50%,-50%);
+    }
+
+
+#vid_search_box, #chl_search_box {
+    margin: 0;
+    height: 7%;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    border-bottom: solid 1px;
+}
+
+#vid_search, #chl_search {
+    height: 100%;
+    width: 97%;
+    float: left;
+    margin: 0 1.5%;
+    background: rgb(60,60,60);
+    color: white;
+    font-size: 120%;
+    border: none;
+    box-sizing: border-box;
+}
+
+#vid_search_btn, #chl_search_btn {
+    height: 100%;
+    width: 10%;
+    color: white;
+    background: darkgreen;
+    margin: 0;
+    box-sizing: border-box;
+    float: left;
+    border: none;
+}
+
+.vid_card {
+    height: 45%;
+    width: 95%;
+    margin: 2% 2.5%;
+    background: rgb(50,50,50);
+    color: white;
+    position: relative;
+    transform: scale(0,0);
+    transform-origin: top;
+    transition: all .5s ease-out;
+    box-shadow: 2px 4px 10px rgb(10,10,10);
+}
+
+    .vid_card img {
+        width: 100%;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+    }
+
+    .vid_card #title {
+        position: absolute;
+        left: 3%;
+        bottom: 13%;
+        width: 95%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .vid_card #date {
+        height: 10%;
+        position: absolute;
+        left: 3%;
+        bottom: 1%;
+        color: grey;
+    }
+
+
+#vid_results, #chl_results {
+    height: 93%;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+#chl_results {
+    height: 83%;
+}
+
+
+#v_iframe {
+    width: 100%;
+    height: 50%;
+    margin-top: 2%;
+    border:none;
+    background: url("../img/load.gif") no-repeat center;
+}
+
+#v_desc {
+    margin: auto 2.5%;
+    margin-top: 5%;
+    width: 95%;
+    overflow-y: scroll;
+    font-size: 150%;
+    white-space: normal;
+    color:white;
+}
