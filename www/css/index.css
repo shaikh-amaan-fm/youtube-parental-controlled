@@ -63,6 +63,7 @@ img {
     width: 25%;
     margin: 0;
     float: left;
+    overflow-y: scroll;
 }
 
 .popup {

@@ -115,9 +115,24 @@ function chgPass() {
     showPopup("chg");
 }
 
-function chgKey() {
-    navigator.notification.prompt("Enter the API key", (res) => {
+async function chgKey() {
+    navigator.notification.prompt("Enter the API key", async function (res) {
         key = res.input1;
+        if(!key){
+            return alert("Enter a key to continue");
+            
+        }
+        var url ="https://www.googleapis.com/youtube/v3/videos?part=player&id=US99NZruU9A&key=";
+        try {
+            var res = await request(url+key);
+        }
+        catch(e){
+            return alert("Invalid Key");
+        }
+        //if(res && res.error && res.error.errors && res.error.errors[0] && (res.error.errors[0].reason=="keyInvalid")){
+            
+        //}
+
         window.localStorage.setItem("key", key);
         $("ent_pass_popup").style.transform = "translateY(-300%)";
     });

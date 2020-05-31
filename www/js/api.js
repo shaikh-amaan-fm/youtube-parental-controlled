@@ -8,6 +8,10 @@ function request(url) {
                     resolve(JSON.parse(xhr.responseText));
                     unload();
                 }
+                if(xhr.status != 200 && xhr.readyState == 4) {
+                    reject(xhr.responseText);
+                    unload();
+                }
             };
 
             xhr.onerror = function () {
