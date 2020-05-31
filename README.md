@@ -13,3 +13,6 @@
 * Then select __Public data__
 * Click __What credentials do I need?__
 * There you go, you got your __API key__ there, copy it and save it and don't give it to anybody. ;)
+
+> Due to the Quota limitations of API, you can only make about 100 searches per day (Channels and Videos combined). 
+should be enough, no?
