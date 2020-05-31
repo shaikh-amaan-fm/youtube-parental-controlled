@@ -7,7 +7,7 @@
 * Click on __CREATE PROJECT__ and then __CREATE__
 * Click on __ENABLE API AND SERVICES__
 * In __YouTube__ section, click __YouTube Data API v3__ and then __ENABLE__ it
-* Click _CREATE CREDENTIALS_
+* Click __CREATE CREDENTIALS__
 * In __Choose...__ choice box, select __YouTube Data API v3__
 * In the next __Choose...__ choice box, select __Web browser (Javascript)__
 * Then select __Public data__
